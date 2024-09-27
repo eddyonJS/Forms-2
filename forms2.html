@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms day 2</title>
+  </head>
+  <body>
+<!-- select similar words and change their text together keyboard shortcut vscode-->
+    <h3>List - dropdown</h3>
+
+    <label for="city_id"> Cities </label>
+
+    <select name="city" id="city_id">
+        <option value=""> Lahore </option>
+        <option> Karachi dhedhkdkhd </option>
+        <option value="sialkot"> Sialkot </option>
+    </select>
+
+    <h3> Option Groups </h3>
+    <label for="cities_id"> City </label>
+    <select name="cities" id="cities_id">
+    <!-- assigned id to select attribute because its a parent and connected the id to label for attribute-->
+
+    <optgroup label="Punjab">
+        <option value="Lahore"> Lahore </option>
+        <option value="Sialkot"> Sialkot </option>
+    </optgroup>
+  
+    <optgroup label="Sindh">
+        <option value="Karachi"> Karachi </option>
+        <option value="Hyderabad"> Hyderabad </option>
+    </optgroup>
+
+    <optgroup label="KPK">
+        <option value="Peshawar"> Peshawar </option>
+       <option value="Abbottabad"> Abbottabad </option>
+    </optgroup>
+  
+</select>
+
+
+    <h1> Fieldset Forms </h1>
+    <form action="">
+
+        <fieldset>
+            <legend> Your Address </legend>
+        <label for="first_name_id"> First name </label>
+        <input type="text" name="first_name" id="first_name_id">
+        <br>
+
+        <label for="last_name_id"> last name </label>
+        <input type="text" name="last_name" id="last_name_id">
+        <br>
+
+        <label for="street_id"> Street </label>
+        <input type="text" name="street" id="street_id">
+        <br>
+
+        <label for="city_id"> city </label>
+        <input type="text" name="city" id="city_id">
+        <br>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>
+                Additional details
+            </legend>
+
+         <label for="bio_id">Biography</label>
+         <input type="text" name="bio" id="bio_id">
+         <br>
+
+         <label for="age-group"></label>
+
+
+        </fieldset>
+        
+
+    </form>
+
+   
+    
+
+
+
+
+
+</body>
+</html>
